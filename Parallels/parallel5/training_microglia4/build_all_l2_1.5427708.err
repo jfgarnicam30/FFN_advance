@@ -1,0 +1,27 @@
+Loading module for Anaconda
+Anaconda 4.4.0 is now loaded
+Loading module for GNU compilers
+GNU 6.4.0 is now loaded
+I0714 11:12:24.319283 47769483411072 build_coordinates.py:76] Partition counts:
+I0714 11:12:24.320487 47769483411072 build_coordinates.py:78]  13: 92345408
+I0714 11:12:24.320853 47769483411072 build_coordinates.py:80] Resampling and shuffling coordinates.
+I0714 11:14:07.910579 47769483411072 build_coordinates.py:88] Saving coordinates.
+I0714 11:51:28.547411 47283033439872 build_coordinates.py:76] Partition counts:
+I0714 11:51:28.547793 47283033439872 build_coordinates.py:78]  13: 92345408
+I0714 11:51:28.547963 47283033439872 build_coordinates.py:80] Resampling and shuffling coordinates.
+I0714 11:53:12.923516 47283033439872 build_coordinates.py:88] Saving coordinates.
+I0714 12:31:09.161893 47156819873408 build_coordinates.py:76] Partition counts:
+I0714 12:31:09.162396 47156819873408 build_coordinates.py:78]  0: 4569
+I0714 12:31:09.162577 47156819873408 build_coordinates.py:78]  12: 16998
+I0714 12:31:09.162736 47156819873408 build_coordinates.py:78]  13: 92323841
+I0714 12:31:09.162903 47156819873408 build_coordinates.py:80] Resampling and shuffling coordinates.
+I0714 12:35:16.748240 47156819873408 build_coordinates.py:88] Saving coordinates.
+I0714 14:26:25.116419 47462667333248 build_coordinates.py:76] Partition counts:
+I0714 14:26:25.135290 47462667333248 build_coordinates.py:78]  0: 24430
+I0714 14:26:25.135512 47462667333248 build_coordinates.py:78]  9: 1669
+I0714 14:26:25.135684 47462667333248 build_coordinates.py:78]  10: 9759
+I0714 14:26:25.135835 47462667333248 build_coordinates.py:78]  11: 27603
+I0714 14:26:25.135987 47462667333248 build_coordinates.py:78]  12: 69978
+I0714 14:26:25.136133 47462667333248 build_coordinates.py:78]  13: 92211969
+I0714 14:26:25.136272 47462667333248 build_coordinates.py:80] Resampling and shuffling coordinates.
+I0714 14:34:10.385586 47462667333248 build_coordinates.py:88] Saving coordinates.

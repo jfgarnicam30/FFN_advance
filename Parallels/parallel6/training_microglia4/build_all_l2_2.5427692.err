@@ -1,0 +1,40 @@
+Loading module for Anaconda
+Anaconda 4.4.0 is now loaded
+Loading module for GNU compilers
+GNU 6.4.0 is now loaded
+I0713 22:21:41.027879 47243525344896 build_coordinates.py:76] Partition counts:
+I0713 22:21:41.028391 47243525344896 build_coordinates.py:78]  13: 92345408
+I0713 22:21:41.028650 47243525344896 build_coordinates.py:80] Resampling and shuffling coordinates.
+I0713 22:23:30.921640 47243525344896 build_coordinates.py:88] Saving coordinates.
+I0713 23:04:57.642435 47206159842944 build_coordinates.py:76] Partition counts:
+I0713 23:04:57.646915 47206159842944 build_coordinates.py:78]  0: 629239
+I0713 23:04:57.648692 47206159842944 build_coordinates.py:78]  9: 3194
+I0713 23:04:57.650373 47206159842944 build_coordinates.py:78]  10: 47410
+I0713 23:04:57.651205 47206159842944 build_coordinates.py:78]  11: 397614
+I0713 23:04:57.652267 47206159842944 build_coordinates.py:78]  12: 1464580
+I0713 23:04:57.653145 47206159842944 build_coordinates.py:78]  13: 89803371
+I0713 23:04:57.653871 47206159842944 build_coordinates.py:80] Resampling and shuffling coordinates.
+I0713 23:12:57.052830 47206159842944 build_coordinates.py:88] Saving coordinates.
+I0714 03:09:26.023356 47458482167424 build_coordinates.py:76] Partition counts:
+I0714 03:09:26.034570 47458482167424 build_coordinates.py:78]  0: 1011409
+I0714 03:09:26.034838 47458482167424 build_coordinates.py:78]  7: 172
+I0714 03:09:26.035052 47458482167424 build_coordinates.py:78]  8: 4275
+I0714 03:09:26.035233 47458482167424 build_coordinates.py:78]  9: 12968
+I0714 03:09:26.035449 47458482167424 build_coordinates.py:78]  10: 80848
+I0714 03:09:26.035630 47458482167424 build_coordinates.py:78]  11: 435140
+I0714 03:09:26.035809 47458482167424 build_coordinates.py:78]  12: 1990721
+I0714 03:09:26.035985 47458482167424 build_coordinates.py:78]  13: 88809875
+I0714 03:09:26.036177 47458482167424 build_coordinates.py:80] Resampling and shuffling coordinates.
+I0714 03:19:43.784534 47458482167424 build_coordinates.py:88] Saving coordinates.
+I0714 08:26:18.280092 47588072537728 build_coordinates.py:76] Partition counts:
+I0714 08:26:18.472690 47588072537728 build_coordinates.py:78]  0: 3219063
+I0714 08:26:18.473198 47588072537728 build_coordinates.py:78]  6: 44
+I0714 08:26:18.473623 47588072537728 build_coordinates.py:78]  7: 2855
+I0714 08:26:18.474015 47588072537728 build_coordinates.py:78]  8: 25856
+I0714 08:26:18.474425 47588072537728 build_coordinates.py:78]  9: 126462
+I0714 08:26:18.474704 47588072537728 build_coordinates.py:78]  10: 546051
+I0714 08:26:18.475096 47588072537728 build_coordinates.py:78]  11: 1737405
+I0714 08:26:18.475323 47588072537728 build_coordinates.py:78]  12: 5972023
+I0714 08:26:18.475610 47588072537728 build_coordinates.py:78]  13: 80715649
+I0714 08:26:18.475887 47588072537728 build_coordinates.py:80] Resampling and shuffling coordinates.
+I0714 08:37:03.053065 47588072537728 build_coordinates.py:88] Saving coordinates.
