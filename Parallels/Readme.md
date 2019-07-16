@@ -1,23 +1,38 @@
-# FFN_advance
-You will find some scripts coded to run the different steps of FFN (https://github.com/google/ffn). Some of these scripts are written on the Jupyter Notebook, so... in order to make easy the explanation of these codes I suggest you download and install a jupyter notebook.
-Below I describe the requirements of each step of the FFN pipeline.
+## Files contained in each Parallel directory.
 
-# Training
-The training process is formed by three stages, the first two are in charge of generating training coordinate files for a labeled dataset stored in HDF5 files. These are compute_partitions.py, build_coordidates.py, stage_1 and stage_ 2, respectively. Stage_3 is the training itself. The python notebook named stages_1_2_3.ipynb describes the scripts coded to run these stages.
+As It was mentioned previously, the training process was carried out with our data on six GPUs. Each Parallel directory contains the files necessary to run the training. These files are grouped in two directories:
+- ffn-master, contains all the scripts required to run the FFN algorithm. The only change did to this files was the one to the train.py file to get an output file (this change is described on the general readme). Because of storage limitations, the only file in this directory is train.py, the rest of the files can be downloaded from the FFN repository.
+- training_microglia4, contains four files related to the second stage of the training (build_coordinates). The *.err* and *.out* files are the **notifications** of the second stage from Ibex. *jobscript_build_coordinates.sh* is the file submitted to IBEX to run our program. *script_soordinates.py* is a script called by *jobscript_build_coordinates.sh* to manage the input and ouput of the second stage.
 
-# Important notes:
+## IBEX: Key notes 
+IBEX is a cluster of CPUs and GPUs created to be used by the KAUST community interested on carrying on demanding computational tasks. The most relevant information to this project is described below. However, It is recommendable check the web-page of IBEX https://www.hpc.kaust.edu.sa/ibex . 
+The way to access to this cluster is opening a console on your PC and typing: 
 
-The goundtruth files are HDF5 files. A HDF5  is a container for two kinds of objects: datasets, which are array-like collections of data, and groups, which are folder-like containers that hold datasets and other groups. On python, a HDF5 is a kind of dictionary. Then, it has several keys. Each key represents a diferent dataset. Groundtruth datasets are storaged under the name of “stack” while Grayscale_maps are storaged under the name of “raw”. Be careful to use this notation in order to avoid errors.
-To create HDF5 files from .TIF datasets (which is the most common dataset used on the group) use the python notebook named create_hdf5_files.ipynb. It has different kinds of create these hdf5 files. 
-Watch out!, the background of the images in the groundtruth datasets is white while the segmentation areas are black.
+‘’’
+ssh user_name@vlogin.ibex.kaust.edu.sa
+‘’’
+where user_name is the user name that KAUST provided you. The kind of login (ilogin, **vlogin**, glogin) depends on if you want use GPUs or CPUs, large or normal memory nodes or kind of GPUs. In this case *vlogin* is the login used to access to GPUs Volta 100 which work have 350 Gb of memory (It is strongly recommendable working on this login to avoid memory problems). Once you are on IBEX is also recommendable work from the path */ibex/scratch/user-name/* which provide a new and faster storage. To run a python script on IBEX is necessary code a script like this:
+‘’’
+#!/bin/bash
+#SBATCH -N 1
+##SBATCH --partition=debug
+#SBATCH --partition=batch
+#SBATCH -J train_all
+#SBATCH -o train_all.out
+#SBATCH -e train_all.%J.err
+#SBATCH --mail-user=javierfernando.garnicamolina@kaust.edu.sa
+#SBATCH --mail-type=ALL
+#SBATCH --time=5-00:00:00
+#SBATCH --mem=100G
+#SBATCH --gres=gpu:1
+#SBATCH --constraint=[v100]
 
-It is very important run stage 1, 2  GPUs. If they are run on CPUs there will be incompatibility problems in stage 3.
-
-In order to replicate the work  carried out by Google in the FFN training, our dataset was split into sub-volumes of 500 images of 500x500 pixels each one.  To make paralell the training I made 6 groups (each group has 32 sub-volumes), and each group run in a single GPU. It is possible make more groups in order to make faster the training. Each group was set up in a specific  directory (See files Parallel1, Parallel2, Parallel3, Parallel4, Parallel5, Parallel6 ). 
-
-Each file contains a ffn_master file with all the scripts related to FFN algorithm. The only script which is different to the original one (the one downloaded from Google) is the Train.py, this one was modify to create an output file. If you want to change the output path, go to the line related on this script and write the path you need. <<flags.DEFINE_string('train_dir', '/ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels',  'Path where checkpoints and other data will be saved.')>> 
-
-The Parallel files contains another directory  called “training_microglia4”. This contains the scripts necessary to run the algorithm on IBEX. Grayscale maps, groundtruth, af and coordinates directories are in Parallel2.
-Refer to the Readme.md on Paralle2 to read the explanation about the different files and scripts in the several Parallel directories. 
 
 
+module load anaconda3
+source activate /home/garnicj/ksl-fernando/fernando_env/
+
+#run the application
+/home/garnicj/ksl-fernando/fernando_env/bin/python -u /ibex/scratch/garnicj/parallel2/training_microglia4/script_training.py
+
+‘’’
