@@ -11,11 +11,11 @@ The training process is formed by three stages, the first two are in charge of g
 - To create HDF5 files from .TIF datasets (which is the most common dataset used on the group) use the python notebook named create_hdf5_files.ipynb. It has different kinds of create these hdf5 files. 
 - Watch out!, the background of the images in the groundtruth datasets is white while the segmentation areas are black.
 
-It is very important run stage 1, 2  GPUs. If they are run on CPUs there will be incompatibility problems in stage 3.
+It is very important run stage 1, 2 on GPUs. If they are run on CPUs there will be incompatibility problems in stage 3.
 
 In order to replicate the work  carried out by Google in the FFN training, our dataset was split into sub-volumes of 500 images of 500x500 pixels each one.  To make paralell the training I made 6 groups (each group has 32 sub-volumes), and each group run in a single GPU. It is possible make more groups in order to make faster the training. Each group was set up in a specific  directory (See files Parallel1, Parallel2, Parallel3, Parallel4, Parallel5, Parallel6 ). 
 
-Each file contains a ffn_master file with all the scripts related to FFN algorithm. The only script which is different to the original one (the one downloaded from Google) is the Train.py, this one was modify to create an output file. If you want to change the output path, go to the line related on this script and write the path you need. 
+Each file contains a ffn_master file with all the scripts related to FFN algorithm. The only script which is different to the original one (the one downloaded from Google) is the `train.py`, this one was modified to create an output file. If you want to change the output path, go to the line related on this script and write the path you need. 
 ```
 flags.DEFINE_string('train_dir', 
     '/ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels', 
@@ -23,3 +23,5 @@ flags.DEFINE_string('train_dir',
 ```
 
 The Parallel files contains another directory  called “training_microglia4”. This contains the scripts necessary to run the algorithm on IBEX. Grayscale maps, groundtruth, af and coordinates directories are in Parallel2. Refer to the Readme.md on Paralle2 to read the explanation about the different files and scripts in the several Parallel directories. 
+
+Key notes on the different stages of FFN are described on the README of Parallels
