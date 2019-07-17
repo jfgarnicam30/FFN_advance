@@ -1,0 +1,67 @@
+Loading module for Anaconda
+Anaconda 4.4.0 is now loaded
+Loading module for GNU compilers
+GNU 6.4.0 is now loaded
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 10:59:04.870359 47215674465920 compute_partitions.py:154] Labels to process: 1
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 10:59:15.963912 47215674465920 compute_partitions.py:189] Done processing 255
+I0630 10:59:16.073178 47215674465920 compute_partitions.py:191] Nonzero values: 92345408
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 10:59:23.533252 47592220765824 compute_partitions.py:154] Labels to process: 1
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 10:59:34.740037 47592220765824 compute_partitions.py:189] Done processing 255
+I0630 10:59:34.849202 47592220765824 compute_partitions.py:191] Nonzero values: 92345408
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 10:59:41.960423 46914515414656 compute_partitions.py:154] Labels to process: 1
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 10:59:53.135770 46914515414656 compute_partitions.py:189] Done processing 255
+I0630 10:59:53.245265 46914515414656 compute_partitions.py:191] Nonzero values: 92345408
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 11:00:00.463589 47070133063296 compute_partitions.py:154] Labels to process: 1
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 11:00:11.781167 47070133063296 compute_partitions.py:189] Done processing 255
+I0630 11:00:11.890696 47070133063296 compute_partitions.py:191] Nonzero values: 92345408
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 11:00:20.295135 47370855915136 compute_partitions.py:154] Labels to process: 1
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 11:00:31.528794 47370855915136 compute_partitions.py:189] Done processing 255
+I0630 11:00:31.648809 47370855915136 compute_partitions.py:191] Nonzero values: 92345408
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 11:00:38.728435 47000067047040 compute_partitions.py:154] Labels to process: 2
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 11:00:50.242477 47000067047040 compute_partitions.py:189] Done processing 255
+I0630 11:00:50.364215 47000067047040 compute_partitions.py:191] Nonzero values: 92345408
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 11:00:57.522883 47021751807616 compute_partitions.py:154] Labels to process: 1
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 11:01:08.415876 47021751807616 compute_partitions.py:189] Done processing 255
+I0630 11:01:08.524460 47021751807616 compute_partitions.py:191] Nonzero values: 92345408
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 11:01:15.927487 47232236654208 compute_partitions.py:154] Labels to process: 1
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 11:01:26.929630 47232236654208 compute_partitions.py:189] Done processing 255
+I0630 11:01:27.037252 47232236654208 compute_partitions.py:191] Nonzero values: 92345408
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:138: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  output = np.zeros(seg_array[valid_sel].shape, dtype=np.uint8)
+I0630 11:01:34.999368 47000843775616 compute_partitions.py:154] Labels to process: 1
+/ibex/scratch/garnicj/parallel2/ffn-master/compute_partitions.py:180: FutureWarning: Using a non-tuple sequence for multidimensional indexing is deprecated; use `arr[tuple(seq)]` instead of `arr[seq]`. In the future this will be interpreted as an array index, `arr[np.array(seq)]`, which will result either in an error or a different result.
+  object_mask = object_mask[valid_sel]
+I0630 11:01:46.790082 47000843775616 compute_partitions.py:189] Done processing 255
+I0630 11:01:46.915805 47000843775616 compute_partitions.py:191] Nonzero values: 92345408

@@ -1,0 +1,97 @@
+Loading module for Anaconda
+Anaconda 4.4.0 is now loaded
+Loading module for GNU compilers
+GNU 6.4.0 is now loaded
+I0715 13:39:33.044914 47918358740608 import_util.py:44] Importing symbol ConvStack3DFFNModel from ffn.training.models.convstack_3d
+I0715 13:39:34.806709 47918358740608 train.py:721] Random seed: 1563187174
+WARNING:tensorflow:tf.op_scope(values, name, default_name) is deprecated, use tf.name_scope(name, default_name, values)
+W0715 13:39:39.621857 47918358740608 tf_logging.py:121] tf.op_scope(values, name, default_name) is deprecated, use tf.name_scope(name, default_name, values)
+WARNING:tensorflow:From /home/garnicj/ksl-fernando/fernando_env/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+W0715 13:39:51.492755 47918358740608 tf_logging.py:126] From /home/garnicj/ksl-fernando/fernando_env/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0715 13:40:11.114005 47918358740608 tf_logging.py:116] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0715 13:40:16.881495 47918358740608 tf_logging.py:116] Graph was finalized.
+2019-07-15 13:40:17.802940: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-07-15 13:40:20.991407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Tesla V100-SXM2-32GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 31.72GiB freeMemory: 31.41GiB
+2019-07-15 13:40:24.407202: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2019-07-15 13:40:36.098004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-07-15 13:40:36.308003: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2019-07-15 13:40:36.705791: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2019-07-15 13:40:37.572334: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30487 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+INFO:tensorflow:Running local_init_op.
+I0715 13:40:38.276007 47918358740608 tf_logging.py:116] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0715 13:40:43.108470 47918358740608 tf_logging.py:116] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+I0715 13:40:54.836384 47918358740608 tf_logging.py:116] Saving checkpoints for 0 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.48728
+I0715 13:42:02.036862 47918358740608 tf_logging.py:116] global_step/sec: 1.48728
+I0715 13:43:06.000395 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 1.48306
+I0715 13:43:09.464646 47918358740608 tf_logging.py:116] global_step/sec: 1.48306
+INFO:tensorflow:global_step/sec: 1.64712
+I0715 13:44:10.176930 47918358740608 tf_logging.py:116] global_step/sec: 1.64712
+I0715 13:45:12.399179 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 1.43041
+I0715 13:45:20.086860 47918358740608 tf_logging.py:116] global_step/sec: 1.43041
+INFO:tensorflow:Saving checkpoints for 471 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+I0715 13:45:55.083897 47918358740608 tf_logging.py:116] Saving checkpoints for 471 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.44533
+I0715 13:46:29.275439 47918358740608 tf_logging.py:116] global_step/sec: 1.44533
+INFO:tensorflow:global_step/sec: 2.59987
+I0715 13:47:07.738969 47918358740608 tf_logging.py:116] global_step/sec: 2.59987
+I0715 13:47:10.905609 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 1.79612
+I0715 13:48:03.414458 47918358740608 tf_logging.py:116] global_step/sec: 1.79612
+INFO:tensorflow:global_step/sec: 1.94927
+I0715 13:48:54.715576 47918358740608 tf_logging.py:116] global_step/sec: 1.94927
+I0715 13:49:15.272710 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 2.63585
+I0715 13:49:32.654079 47918358740608 tf_logging.py:116] global_step/sec: 2.63585
+INFO:tensorflow:global_step/sec: 1.72815
+I0715 13:50:30.519358 47918358740608 tf_logging.py:116] global_step/sec: 1.72815
+INFO:tensorflow:Saving checkpoints for 1054 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+I0715 13:50:55.086802 47918358740608 tf_logging.py:116] Saving checkpoints for 1054 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+I0715 13:51:21.700936 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 1.83966
+I0715 13:51:24.877307 47918358740608 tf_logging.py:116] global_step/sec: 1.83966
+INFO:tensorflow:global_step/sec: 2.30908
+I0715 13:52:08.184781 47918358740608 tf_logging.py:116] global_step/sec: 2.30908
+INFO:tensorflow:global_step/sec: 2.22971
+I0715 13:52:53.033472 47918358740608 tf_logging.py:116] global_step/sec: 2.22971
+I0715 13:53:15.741424 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 1.55538
+I0715 13:53:57.326666 47918358740608 tf_logging.py:116] global_step/sec: 1.55538
+INFO:tensorflow:global_step/sec: 1.45932
+I0715 13:55:05.851755 47918358740608 tf_logging.py:116] global_step/sec: 1.45932
+I0715 13:55:16.160216 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 2.14914
+I0715 13:55:52.381881 47918358740608 tf_logging.py:116] global_step/sec: 2.14914
+INFO:tensorflow:Saving checkpoints for 1600 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+I0715 13:56:02.088721 47918358740608 tf_logging.py:116] Saving checkpoints for 1600 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.18622
+I0715 13:57:16.683683 47918358740608 tf_logging.py:116] global_step/sec: 1.18622
+I0715 13:57:17.089888 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 2.00857
+I0715 13:58:06.470055 47918358740608 tf_logging.py:116] global_step/sec: 2.00857
+INFO:tensorflow:global_step/sec: 1.5418
+I0715 13:59:11.329610 47918358740608 tf_logging.py:116] global_step/sec: 1.5418
+I0715 13:59:25.327791 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 1.77747
+I0715 14:00:07.589057 47918358740608 tf_logging.py:116] global_step/sec: 1.77747
+INFO:tensorflow:Saving checkpoints for 2090 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+I0715 14:01:02.836703 47918358740608 tf_logging.py:116] Saving checkpoints for 2090 into /ibex/scratch/garnicj/parallel2/training_microglia4/models_all_labels/model.ckpt.
+INFO:tensorflow:global_step/sec: 1.54227
+I0715 14:01:12.428622 47918358740608 tf_logging.py:116] global_step/sec: 1.54227
+I0715 14:01:25.105792 47918358740608 train.py:699] Saving summaries.
+INFO:tensorflow:global_step/sec: 1.46719
+I0715 14:02:20.586124 47918358740608 tf_logging.py:116] global_step/sec: 1.46719
+slurmstepd: error: *** JOB 5458610 ON gpu609-04 CANCELLED AT 2019-07-15T14:02:43 ***
