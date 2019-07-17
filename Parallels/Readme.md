@@ -52,3 +52,10 @@ The most useful IBEX commands on this project are
 
 Note that the “<” and “>” symbols were written to indicate the name of a variable. You do not need write them.
 
+To install packages you need the IBEX support, as user you are NOT allowed to install any packages. You can load modules which have several packages already installed, but if you need install specific ones, you must contact to IBEX. In our case IBEX create a specific environment for us, which a special permission to install packages, due to the quantity of packages this project requires. The name of this environment is `fernando_env`. Which is loaded with the commands: 
+```
+module load anaconda3
+source activate /home/garnicj/ksl-fernando/fernando_env/
+```
+
+The line  `/home/garnicj/ksl-fernando/fernando_env/bin/python` refers to our python version. 
