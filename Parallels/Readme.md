@@ -12,7 +12,7 @@ The way to access to this cluster is opening a console on your PC and typing:
 ssh user_name@vlogin.ibex.kaust.edu.sa
 ```
 
-where user_name is the user name that KAUST provided you. The kind of login (ilogin, **vlogin**, glogin) depends on if you want use GPUs or CPUs, large or normal memory nodes or kind of GPUs. In this case vlogin is the login used to access to GPUs Volta 100 which work have 350 Gb of memory (It is strongly recommendable working on this login to avoid memory problems). Once you are on IBEX is also recommendable work from the path `/ibex/scratch/user-name/` which provide a new and faster storage (if you cannot access to this path, contact the IBEX team). To run a python script on IBEX is necessary code a script like this:
+where user_name is the user name that KAUST provided you. The kind of login (ilogin, **vlogin**, glogin) depends on if you want to use GPUs or CPUs, large or normal memory nodes or kind of GPUs. In this case vlogin is the login used to access to GPUs Volta 100 which work have 350 Gb of memory (It is strongly recommendable working on this login to avoid memory problems). Once you are on IBEX is also recommendable work from the path `/ibex/scratch/user-name/` which provide a new and faster storage (if you cannot access to this path, contact the IBEX team). To run a python script on IBEX is necessary code a script like this:
 
 ```
 
@@ -42,7 +42,7 @@ source activate /home/garnicj/ksl-fernando/fernando_env/
 
 This script contains the name with which IBEX will call to the programin this case `train_all`, the e-mail address to which IBEX will send  notifications, time requested `5-00:00:00` (5 days), memory requested `100G` (100 Gigabytes), number of GPUs necessary (1) and the kind of GPU `v100` (volta 100). Finally, this jobscript must to have the extension .sh
 
-**Note:** FFN algorithm was designed to run in a single GPU, It is possible run it in several GPUs using the package Horovod https://github.com/horovod/horovod . However, splitting the data as It is shown, it is NOT necessary, because running in several GPUs depends on how the code is designed and how the data is distributed in it. Then, the methodology followed replicates the one followed by Google (Check the paper related: https://www.nature.com/articles/s41592-018-0049-4). 
+**Note:** FFN algorithm was designed to run in a single GPU, It is possible run it in several GPUs using the package Horovod https://github.com/horovod/horovod . However, splitting the data as It is shown, it is NOT necessary, because running on several GPUs depends on how the code is designed and how the data is distributed on it. Then, the methodology followed replicates the one followed by Google (Check the paper related: https://www.nature.com/articles/s41592-018-0049-4). 
 
 The most useful IBEX commands on this project are
 - **sbatch <jobscript_name>** To submit a jobscript
@@ -52,7 +52,7 @@ The most useful IBEX commands on this project are
 
 Note that the “<” and “>” symbols were written to indicate the name of a variable. You do not need write them.
 
-To install packages you need the IBEX support, as user you are NOT allowed to install any packages. You can load modules which have several packages already installed, but if you need install specific ones, you must contact to IBEX. In our case IBEX create a specific environment for us, which a special permission to install packages, due to the quantity of packages this project requires. The name of this environment is `fernando_env`. Which is loaded with the commands: 
+To install packages you need the IBEX support, as user you are NOT allowed to install any packages. You can load modules which have several packages already installed, but if you need install specific ones, you must contact to IBEX. In our case IBEX create a specific environment for us, which has a special permission to install packages, due to the quantity of packages this project requires. The name of this environment is `fernando_env`. Which is loaded with the commands: 
 ```
 module load anaconda3
 source activate /home/garnicj/ksl-fernando/fernando_env/
