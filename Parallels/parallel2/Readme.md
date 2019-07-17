@@ -4,13 +4,13 @@ As it has been described on the previous READMEs, the FFN algorithm is formed by
 ### Data preparation
 Let us say that the training process needs three steps to be carried out. These are `compute_partitions.py`, `build_coordinates.py` and `train.py`. If read the main README on the FFN repository you will realize the next requirements by each stage:
 
-**compute_partitions**: It requires a `.hdf5` file with the groundtruth of the data with which the training process will be done. To create this file, check the jupyter notebook called `create_hdf5_files.ipynb`. This notebook contains several scripts to create .hdf5 files. The description of theses scripts is in the same notebook. Keep in mind next important factors:
+**compute_partitions**: It requires a `.hdf5` file with the groundtruth of the data with which the training process will be done. To create this file, check the jupyter notebook called `create_hdf5_files.ipynb`. This notebook contains several scripts to create .hdf5 files. The description of these scripts is in the same notebook. Keep in mind next important factors:
 
 - The groundtruth background must be white while the segmentation areas must be black (or in a gray-scale, if you have several objects).
 - Data type of the images in the groundtruth must be uint8.
 - The name of the dictionary that contains the groundtruth data set should be called `stack` (to keep concordance with the FFN data names).
 
-compute_partitions do not take to much time running, approximately 50 minutes to run on the full data set (24 Gb spited int 192 sub-volumes). The output of this script is a `.h5` file . In our case, we got 192 `.h5` files one per each grundtruth file. To launch 192 groundtruth files through `compute_partitions.py` script, there are two scripts, `jobscript_compute_partitions.sh` which function is establishing the requirements to IBEX and call the second script `script_compute.py`. This last script performs the invocation of `compute_partitions.py` on **all the groundtruth files.**
+compute_partitions do not take too much time running, approximately 50 minutes to run on the full data set (24 Gb spited into 192 sub-volumes). The output of this script is a `.h5` file . In our case, we got 192 `.h5` files one per each grundtruth file. To launch 192 groundtruth files through `compute_partitions.py` script, there are two scripts, `jobscript_compute_partitions.sh` which function is establishing the requirements to IBEX and call the second script `script_compute.py`. This last script performs the invocation of `compute_partitions.py` on **all the groundtruth files.**
 
 **build_coordinates:** It requires a Tensorflow vector with coordinates which is provided by `compute_partitions.py`. Therefore, the `.h5` file from `compute_partitions.py` will be the input of `biuld_coordinates.py`.  In our case, this script took around of 7 days running through 32 sub-volumes. This means that this stage (stage 2) is the most time consuming.
 
@@ -18,7 +18,7 @@ compute_partitions do not take to much time running, approximately 50 minutes to
 
 - The shape of groundtruth and grayscale-maps must be the same.
 - `train.py` was coded to take a previous model (if it exists) and add it the new information of the current training process.
-- The original version of this code was modified in order to get n output. Then, if want to get the model (output) in a different path, please check the explanation related to this written on the mean README.
+- The original version of this code was modified in order to get an output. Then, if want to get the model (output) in a different path, please check the explanation related to this written on the main README.
 - The model obtained from the training of all of our data was saved on the path: `/var/remote/projects/epfl/data/KB-E0010/FFN_model`. 
 
 ## Inference
