@@ -19,7 +19,7 @@ compute_partitions do not take to much time running, approximately 50 minutes to
 - The shape of groundtruth and grayscale-maps must be the same.
 - `train.py` was coded to take a previous model (if it exists) and add it the new information of the current training process.
 - The original version of this code was modified in order to get n output. Then, if want to get the model (output) in a different path, please check the explanation related to this written on the mean README.
-- The model obtained from the training of all of our data was saved on the path: `PATH`
+- The model obtained from the training of all of our data was saved on the path: `/var/remote/projects/epfl/data/KB-E0010/FFN_model`. 
 
 ## Inference
 In order to run the inference you need the file over which you want to get the semgentation. This one must be a `.hdf5` file, ant the name of the dataset into should be `stack`. Be careful on indicating the right path where the model was stored. There are few recommendations related this step:
